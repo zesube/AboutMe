@@ -200,64 +200,98 @@ ul {
   margin: 40px 0;
   flex-wrap: wrap; /* Allows stacking on smaller screens */
 }
-
-
-/*---------education categories----------*/
+/* Container Styling */
 .small-container {
-  max-width: 100%;
-  margin: 0 auto;
-    padding: 20px;
-  font-family: 'Times New Roman', Times, serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Main layout row */
-.education-row {
-  display: flex;
-  flex-direction: row; /* Horizontal layout */
-  flex-wrap: wrap;     /* Stack on smaller screens */
-  gap: 40px; /* Horizontal space between columns */
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 60px;
+/* Section Title */
+.title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
 }
 
-/* Reverse layout for image on right */
-.education-row.reverse {
-  flex-direction: row-reverse;
+/* Education Row */
+.education-row h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #34495e;
 }
 
-/* Shared column styles */
-.col-2, .col-5 {
-    flex: 1 1 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
-  background-color: white;
-  margin-bottom: 30px;
+/* Subheadings */
+.education-row h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #2980b9;
 }
 
-/* Image styling */
-.col-2 img, .col-5 img {
-    max-width: 300px;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 15px;
+.education-row h4 {
+    font-size: 1.3em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #27ae60;
 }
 
-/* Text styling */
-.col-2 h5, .col-2 h4,
-.col-5 h5, .col-5 h4 {
-  margin: 10px 0;
-  color: black;
-  font-size: 1.2em;
+/* Paragraph Styling */
+.education-row p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-.col-2 p, .col-5 p {
-  margin-bottom: 20px;
-  line-height: 1.8;
-  color: black;
-    text-align: justify;
+/* Bold Text */
+.education-row strong {
+    color: #2c3e50;
+}
+
+/* Project Highlights List */
+.education-row ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.education-row ul li {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .small-container {
+        padding: 20px 15px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .education-row h1 {
+        font-size: 1.6em;
+    }
+
+    .education-row h3,
+    .education-row h4 {
+        font-size: 1.2em;
+    }
+
+    .education-row p,
+    .education-row ul li {
+        font-size: 0.95em;
+    }
 }
 
 /* Responsive stacking */
@@ -270,8 +304,6 @@ ul {
     margin-bottom: 30;
     }
 }
-
-
 
 
 /* Responsive tweaks */
@@ -547,5 +579,6 @@ img {
     width: 120px;
   }
 }
+
 
 
