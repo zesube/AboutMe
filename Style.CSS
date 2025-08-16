@@ -221,21 +221,20 @@ ul {
     padding-bottom: 10px;
 }
 
-/*--------- Education Categories ----------*/
+/*---------education categories----------*/
 .small-container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+    padding: 20px;
   font-family: 'Times New Roman', Times, serif;
-  background-color: #f8f8f8;
 }
 
 /* Main layout row */
 .education-row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 40px;
+  flex-direction: row; /* Horizontal layout */
+  flex-wrap: wrap;     /* Stack on smaller screens */
+  gap: 40px; /* Horizontal space between columns */
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 60px;
@@ -248,66 +247,36 @@ ul {
 
 /* Shared column styles */
 .col-2, .col-5 {
-  flex: 1 1 300px;
+    flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 30px;
   background-color: white;
   margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Image styling */
 .col-2 img, .col-5 img {
-  max-width: 300px;
+    max-width: 300px;
   height: auto;
   border-radius: 6px;
   margin-bottom: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Text styling */
 .col-2 h5, .col-2 h4,
 .col-5 h5, .col-5 h4 {
   margin: 10px 0;
-  color: #222;
+  color: black;
   font-size: 1.2em;
-  font-weight: bold;
 }
 
 .col-2 p, .col-5 p {
   margin-bottom: 20px;
   line-height: 1.8;
-  color: #333;
-  text-align: justify;
-  font-size: 1.05em;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .education-row {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .col-2, .col-5 {
-    padding: 20px;
-  }
-
-  .col-2 img, .col-5 img {
-    max-width: 100%;
-  }
-
-  .col-2 h5, .col-5 h5,
-  .col-2 h4, .col-5 h4 {
-    font-size: 1.1em;
-  }
-
-  .col-2 p, .col-5 p {
-    font-size: 1em;
-  }
+  color: black;
+    text-align: justify;
 }
 
 /* Responsive Design */
@@ -620,6 +589,7 @@ img {
     width: 120px;
   }
 }
+
 
 
 
