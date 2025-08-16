@@ -60,7 +60,7 @@ p {
   margin-bottom: 50px;
 }
 
-.col-1 img, .col-2 img, .col-3, .col-5 img {
+.col-1 img, {
   width: 100%;
   padding: 20px 0;
 }
@@ -171,23 +171,6 @@ input:focus {
   display: block;
 }
 
-#MenuItems {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-#MenuItems a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-#MenuItems a:hover {
-  color: #000;
-}
 ul {
   list-style: none;
   padding: 0;
@@ -520,6 +503,7 @@ img {
     width: 120px;
   }
 }
+
 
 
 
