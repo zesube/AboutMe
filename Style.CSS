@@ -208,7 +208,7 @@ ul {
     background-color: #f9f9f9;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Times New Romen;
 }
 
 /* Section Title */
@@ -221,63 +221,6 @@ ul {
     padding-bottom: 10px;
 }
 
-/*---------education categories----------*/
-.small-container {
-  max-width: 100%;
-  margin: 0 auto;
-    padding: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-/* Main layout row */
-.education-row {
-  display: flex;
-  flex-direction: row; /* Horizontal layout */
-  flex-wrap: wrap;     /* Stack on smaller screens */
-  gap: 40px; /* Horizontal space between columns */
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 60px;
-}
-
-/* Reverse layout for image on right */
-.education-row.reverse {
-  flex-direction: row-reverse;
-}
-
-/* Shared column styles */
-.col-2, .col-5 {
-    flex: 1 1 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
-  background-color: white;
-  margin-bottom: 30px;
-}
-
-/* Image styling */
-.col-2 img, .col-5 img {
-    max-width: 300px;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-
-/* Text styling */
-.col-2 h5, .col-2 h4,
-.col-5 h5, .col-5 h4 {
-  margin: 10px 0;
-  color: black;
-  font-size: 1.2em;
-}
-
-.col-2 p, .col-5 p {
-  margin-bottom: 20px;
-  line-height: 1.8;
-  color: black;
-    text-align: justify;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -589,6 +532,7 @@ img {
     width: 120px;
   }
 }
+
 
 
 
