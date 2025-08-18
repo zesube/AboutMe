@@ -110,7 +110,7 @@ header .row {
 }
 
 .title::after {
-  content: '';
+  content: ""; /* Remove the ] */
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -120,6 +120,7 @@ header .row {
   background: var(--color-accent);
   border-radius: var(--border-radius);
 }
+
 
 /*------------------ About Me Section ------------------*/
 .col-3 {
@@ -230,12 +231,30 @@ button[type="submit"] img {
 /*------------------ Footer ------------------*/
 .footer-box {
   background-color: var(--color-accent);
-  padding: 40px 20px;
+  padding: 10px 20px; /* reduced padding */
+  font-size: 0.8rem;   /* smaller text */
 }
 
 footer .container {
   max-width: var(--max-width);
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px; /* spacing between items */
+  text-align: center;
+}
+
+footer .container a {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+footer .container a:hover {
+  color: #000;
 }
 
 footer .row {
@@ -278,6 +297,14 @@ footer img {
   color: var(--color-text);
 }
 
+@media (max-width: 500px) {
+  footer .container {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+
 /*------------------ Responsive ------------------*/
 @media (max-width: 768px) {
   .navbar {
@@ -313,3 +340,4 @@ footer img {
     margin-bottom: 30px;
   }
 }
+
