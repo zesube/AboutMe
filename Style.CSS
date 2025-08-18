@@ -258,7 +258,7 @@ footer .container a:hover {
 
 footer .row {
   display: flex;
-  flex-direction: column; /* stack items vertically */
+  flex-direction: row;
   align-items: center;
   text-align: center;
   gap: 20px;
@@ -354,6 +354,7 @@ footer img {
     margin-bottom: 30px;
   }
 }
+
 
 
 
