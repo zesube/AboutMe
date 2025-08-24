@@ -94,6 +94,16 @@ header .row {
   max-width: 400px;
   height: auto;
 }
+.col-full {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* optional: centers content horizontally */
+}
+
 
 /*------------------ Section Containers ------------------*/
 .small-container {
@@ -355,6 +365,7 @@ footer img {
     margin-bottom: 30px;
   }
 }
+
 
 
 
