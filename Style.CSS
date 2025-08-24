@@ -127,15 +127,12 @@ header .row {
 .col-3 {
   flex: 1 1 300px;
   padding: 20px;
-  text-align: right;
+  text-align: center;
 }
-col .row {
+.row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: var(--max-width);
-  margin: 15px auto;
-  padding: 0 20px;
+  flex-direction: column; /* Stack items vertically */
+  width: 25%; /* 3 columns out of 12 = 25% */
 }
 
 .col-3 img {
@@ -366,6 +363,7 @@ footer img {
     margin-bottom: 30px;
   }
 }
+
 
 
 
