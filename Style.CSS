@@ -127,13 +127,22 @@ header .row {
 .col-3 {
   flex: 1 1 300px;
   padding: 20px;
-  text-align: center;
+  text-align: right;
+}
+col .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: var(--max-width);
+  margin: 15px auto;
+  padding: 0 20px;
 }
 
 .col-3 img {
   max-width: 300px;
   border-radius: var(--border-radius);
   margin-bottom: 15px;
+
 }
 
 .col-3 h5 {
@@ -357,6 +366,7 @@ footer img {
     margin-bottom: 30px;
   }
 }
+
 
 
 
